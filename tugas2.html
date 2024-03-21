@@ -150,8 +150,8 @@
       
     
     
-    <img src="./gambar/assets/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="./gambar/assets/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="assets/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="assets/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
   
   
 </a></div>
@@ -456,18 +456,18 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="aiven">
 <h1>Aiven<a class="headerlink" href="#aiven" title="Link to this heading">#</a></h1>
 <p>Aiven adalah sebuah platform cloud yang menyediakan layanan manajemen data yang lengkap dan terkelola. Mereka menawarkan berbagai layanan database open-source, seperti PostgreSQL, MySQL, Kafka, Elasticsearch, Cassandra, Redis, dan banyak lagi. Platform ini dirancang untuk memudahkan pengembang dan organisasi dalam menyimpan, mengelola, dan menganalisis data mereka dengan mudah dan efisien. pada kali ini kita akan membuat server database untuk MySQL dan PostgreSQL, namun sebelum pembuatan server kalian harus melakukan pembuatan akun untuk aiven.</p>
-<img src="./gambar/" width="" align="" /><p>maka kita akan bisa melihat server yang berhasil kita buat diatas, yaitu server untuk MySQL dan PostgreSQL</p>
+<img src="./gambar/image-20240321-101002.png" width="" align="" /><p>maka kita akan bisa melihat server yang berhasil kita buat diatas, yaitu server untuk MySQL dan PostgreSQL</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="heidisql">
 <h1>HeidiSQL<a class="headerlink" href="#heidisql" title="Link to this heading">#</a></h1>
 <p>HeidiSQL adalah sebuah aplikasi manajemen basis data yang open-source dan gratis untuk sistem manajemen basis data (DBMS) seperti MySQL, MariaDB, Microsoft SQL Server, PostgreSQL, dan SQLite. Dirancang khusus untuk memudahkan pengembang database dalam melakukan berbagai tugas administratif terkait basis data, termasuk pengaturan, desain skema, eksekusi query, dan pemantauan. pada heidiSQL kita bisa melakukan pengeditan pada database yang ada di aiven, namun kita harus mengkonfigurasi database kita yang ada di aiven dengan heidiSQL.</p>
-<img src="./gambar/image-20240320-183433.png" width="" align="" /><p>lakukan pencocokan konfigurasi dengan yang ada pada services database kita yang berada pada aiven (Perhatikan jika server merupakan database MySQL maka pada heidiSQL).</p>
-<img src="./gambar/image-20240320-183757.png" width="" align="" /><p>lakukan juga konfigurasi pada postgreSQL.</p>
+<img src="./gambar/image-20240321-101321.png" width="" align="" /><p>lakukan pencocokan konfigurasi dengan yang ada pada services database kita yang berada pada aiven (Perhatikan jika server merupakan database MySQL maka pada heidiSQL).</p>
+<img src="./gambar/image-20240321-101532.png" width="" align="" /><p>lakukan juga konfigurasi pada postgreSQL.</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="deepnote">
 <h1>Deepnote<a class="headerlink" href="#deepnote" title="Link to this heading">#</a></h1>
 <p>Deepnote adalah platform kolaborasi dan pengembangan data yang dirancang untuk memudahkan tim data scientist, analis data, dan pengembang bekerja secara bersama-sama dalam proyek analisis data dan machine learning. Platform ini menyediakan lingkungan yang lengkap untuk mengelola, mengolah, menganalisis, dan memvisualisasikan data, serta untuk mengembangkan model machine learning. pada deepnote kita juga bisa melakukan manajemen database kita dengan cara kita melakukan intgration dengan database yang ingin kita manage. pada integration kita pilih sesuai database kita, jika database kita MySQL maka kita lakukan integrationnya dengan MySQL</p>
-<img src="./gambar/image-20240320-184338.png" width="" align="" /><p>lakukan konfigurasi sama seperti dengan heidiSQL tersebut. namun kita belum bisa melakukan pengeditan database karena kita belum mempunyai data yang suda kita simpan pada aiven.</p>
+<img src="./gambar/image-20240321-101608.png" width="" align="" /><p>lakukan konfigurasi sama seperti dengan heidiSQL tersebut. namun kita belum bisa melakukan pengeditan database karena kita belum mempunyai data yang suda kita simpan pada aiven.</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="mengumpulkan-data">
 <h1>Mengumpulkan data<a class="headerlink" href="#mengumpulkan-data" title="Link to this heading">#</a></h1>
@@ -477,8 +477,8 @@ document.write(`
 <h1>Memasukkan data pada MySQL dan potsgreSQL<a class="headerlink" href="#memasukkan-data-pada-mysql-dan-potsgresql" title="Link to this heading">#</a></h1>
 <p>sebelum memasukkan data iris yang kita dapatkan sebelumnya kita harus melakukan konversi csv to sql, banyak website yang menawarkan konversi tinggal cari diinternet dan saya menggunakan website : <a class="reference external" href="https://tableconvert.com/csv-to-sql">https://tableconvert.com/csv-to-sql</a>. setelah melakukan konversi maka kita tinggal membuka heidiSQL yang ingin kita masukkan datanya. Contoh imputasi data ke MySQL.</p>
 <p>Pertama kita click kanan pada server database kita, nanti akan muncul create new dan pilih database dan berinama sesuai keinginan kalian</p>
-<img src="./gambar/image-20240320-185719.png" width="" align="" /><p>Selanjutnya kita pilih database yang sudah kita buat sebelumnya, dan pada tab nama database kita ada Query, kita click pada query tersebut selanjutnya kita tinggal click kanan pada kotak kosong tersebut dan pilih load sql dan pilih data yang suda kita punya sebelumnya</p>
-<img src="./gambar/image-20240320-190054.png" width="" align="" /><p>Setelah itu kita tinggal run dan tunggu data kita selesai diinputkan pada database</p>
+<img src="./gambar/image-20240321-101644.png" width="" align="" /><p>Selanjutnya kita pilih database yang sudah kita buat sebelumnya, dan pada tab nama database kita ada Query, kita click pada query tersebut selanjutnya kita tinggal click kanan pada kotak kosong tersebut dan pilih load sql dan pilih data yang suda kita punya sebelumnya</p>
+<img src="./gambar/image-20240321-101656.png" width="" align="" /><p>Setelah itu kita tinggal run dan tunggu data kita selesai diinputkan pada database</p>
 <img src="./gambar/image-20240320-190225.png" width="" align="" /><p>maka akan muncul table sesuai data yang kita inputkan</p>
 <img src="./gambar/image-20240320-190312.png" width="" align="" /><p>lakukan juga input pada data postgreSQL, setelah itu kita tinggal melakukan integration pada deepnote dengan database kita samakan dengan database yang kita punya.</p>
 </section>
